@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+.UnderLine {
+ 
+  width: 50%;
+  border-bottom: solid;
+  border-bottom-width: 2px;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333232;
+  color: #cecaca;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 50%;
+  margin-left: -60px;
+
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mainBg {
+  background-color: #9cada1;
+}
+
+.secondBg {
+  background-color: #d5d8d2;
+}
+
+.secondText {
+  color: #2c312e;
+}
+
+.appBg {
+  background-color:#1F2422;
+}
+
+.projectBg {
+  background-color:#121413;
+}
+
+.projectText {
+  color: #D1D6D3;
+}

@@ -1,23 +1,142 @@
 import logo from './logo.svg';
 import './App.css';
+import ParticlesBackground from './ParticlesBackground';
+import { useEffect } from 'react';
+
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Thomas Stokes | Portfolio";
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='relative min-h-screen w-full'>
+      {/* Particles Background */}
+      <div className='fixed inset-0 -z-10'>
+        <ParticlesBackground />
+      </div>  
+      {/* Main wrapper */}
+      <div className='relative flex flex-col gap-5 mb-10 items-center justify-center w-full'>
+        {/* First container */}
+        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto rounded-2xl mainBg text-black p-4 min-h-90 sm:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%] shadow-xs shadow-gray-200'>
+          <div className='flex flex-col items-center sm:flex-row sm:justify-between w-full px-2 sm:px-5'>
+            <div className='p-2 sm:p-5 text-2xl sm:text-3xl mb-2 font-semibold'>
+              Portfolio
+            </div>
+            <ul className='flex flex-row flex-wrap justify-center space-x-4 sm:space-x-8 sm:text-xl'>
+              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out'><a href='#Projects'>Projects</a></li>
+              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out'>About</li>
+              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out'>Contacts</li>
+            </ul>
+
+          </div>
+          <div className='mx-auto mt-5 w-[90%] text-2xl sm:mx-20 sm:mt-10 sm:text-4xl '>
+            <div className='UnderLine '>
+              <h1 className='pb-2 '>Thomas Stokes</h1>
+            </div>
+
+          </div>
+          <div className='w-full flex justify-center'>
+            <p className='mt-5 sm:mx-20 mx-auto w-[90%] text-stone-800 '>Software Developer based in the UK, interested in web development, software development and Cybersecurity.</p>
+          </div>
+
+        </div>
+        {/* second container */}
+        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto shadow-sm shadow-gray-200 rounded-2xl secondBg secondText p-4 min-h-[600px] sm:min-h-[500px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%]'>
+          <div className='flex items-center justify-center '>
+            <div className=''>
+              <h1 className='border-b-2 font-semibold pb-2 secondText text-2xl sm:text-3xl'>What I can do</h1>
+            </div>
+          </div>
+          <div className='flex flex-col gap-4 sm:flex-row sm:min-h-full'>
+            <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10'>
+              <p className='secondText sm:text-xl sm:mt-3'>As a Software Developer I am able to create a websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
+
+                For Front end, I primarily use JavaScript, HTML and CSS, combined with React and TailwindCSS to create a dynamic website and shorten development time.
+
+                For the backend, I use Python, utilising the Flask framework and SQLite to create secure databases.
+              </p>
+            </div>
+            <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10 '>
+              <div className='appBg flex flex-wrap justify-center py-10 gap-5 sm:gap-10 sm:justify-center sm:py-10 shadow-md rounded-2xl'>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img alt='css icon' src='/Icons/css.png'></img>
+                  <span className='tooltiptext'>CSS</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img alt='flask icon' src='/Icons/flask1.png'></img>
+                  <span className='tooltiptext'>Flask</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img alt='html icon' src='/Icons/html.png'></img>
+                  <span className='tooltiptext'>HTML</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img alt='jinja icon' src='/Icons/jinja1.png'></img>
+                  <span className='tooltiptext'>Jinja</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img alt='JavaScript icon' src='/Icons/js.png'></img>
+                  <span className='tooltiptext'>JavaScript</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img alt='Python icon' src='/Icons/python.png'></img>
+                  <span className='tooltiptext'>Python</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img src='/Icons/react.png' alt='React icon'></img>
+                  <span className='tooltiptext'>React</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img src='/Icons/sqlite.png' alt='sqlite icon'></img>
+                  <span className='tooltiptext'>SQLite</span>
+                </div>
+                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
+                  <img src='/Icons/tailwind.png' alt='TailwindCSS icon'></img>
+                  <span className='tooltiptext'>TailwindCSS</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Projects */}
+
+        {/* Wrapping div */}
+        <div className='flex flex-col sm:flex-col lg:flex-row justify-center items-center lg:items-stretch gap-5 w-[95%] lg:w-[70%] mx-auto' id='Projects'>
+          {/* Hyper Text Project */}
+          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black'>
+            <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
+              <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
+                <img src='/Icons/hypertext.png' alt='HyperText Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
+              </div>
+              <div className='flex flex-col w-full justify-center items-center text-center md:w-full md:justify-center md:items-center md:text-center md:content-start '>
+                <h2 className='sm:text-2xl text-xl font-bold underline underline-offset-8'>Hyper Text Project</h2>
+                <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 projectText'>In this project, I created a web story game where the user's choices affect the game flow and the outcome of the game. I also implemented a turn based combat system for this game.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* VLE Project */}
+          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black'>
+            <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
+              <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
+                <img src='/Icons/vle.png' alt='Virtual Learning Environment Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
+              </div>
+              <div className='flex flex-col w-full justify-center items-center text-center md:w-full md:justify-center md:items-center md:text-center md:content-start '>
+                <h2 className='sm:text-2xl text-xl font-bold underline underline-offset-8'>VLE Project</h2>
+                <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 projectText'>In this project, I created a virtual learning environment where users such as Students and Teachers view information about their courses, attendance and manage their courses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 }
