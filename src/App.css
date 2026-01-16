@@ -32,16 +32,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .UnderLine {
- 
+
   width: 50%;
   border-bottom: solid;
   border-bottom-width: 2px;
 }
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -75,7 +78,7 @@
 }
 
 .mainBg {
-  background-color: #9cada1;
+  background-color: #a6aaa7;
 }
 
 .secondBg {
@@ -87,11 +90,11 @@
 }
 
 .appBg {
-  background-color:#1F2422;
+  background-color: #1F2422;
 }
 
 .projectBg {
-  background-color:#121413;
+  background-color: #a8aca9;
 }
 
 .projectText {

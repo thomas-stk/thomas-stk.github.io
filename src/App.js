@@ -113,9 +113,9 @@ function App() {
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/hypertext.png' alt='HyperText Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
               </div>
-              <div className='flex flex-col w-full justify-center items-center text-center md:w-full md:justify-center md:items-center md:text-center md:content-start '>
+              <div className='flex flex-col w-full justify-center items-center text-center md:w-full md:justify-center md:items-center md:text-center md:content-start secondText'>
                 <h2 className='sm:text-2xl text-xl font-bold underline underline-offset-8'>Hyper Text Project</h2>
-                <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 projectText'>In this project, I created a web story game where the user's choices affect the game flow and the outcome of the game. I also implemented a turn based combat system for this game.
+                <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 '>In this project, I created a web story game where the user's choices affect the game flow and the outcome of the game. I also implemented a turn based combat system for this game.
                 </p>
               </div>
             </div>
@@ -127,9 +127,9 @@ function App() {
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/vle.png' alt='Virtual Learning Environment Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
               </div>
-              <div className='flex flex-col w-full justify-center items-center text-center md:w-full md:justify-center md:items-center md:text-center md:content-start '>
+              <div className='flex flex-col w-full justify-center items-center text-center md:w-full md:justify-center md:items-center md:text-center md:content-start secondText'>
                 <h2 className='sm:text-2xl text-xl font-bold underline underline-offset-8'>VLE Project</h2>
-                <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 projectText'>In this project, I created a virtual learning environment where users such as Students and Teachers view information about their courses, attendance and manage their courses.
+                <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 '>In this project, I created a virtual learning environment where users such as Students and Teachers view information about their courses, attendance and manage their courses.
                 </p>
               </div>
             </div>
