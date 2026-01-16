@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ParticlesBackground from './ParticlesBackground';
 import { useEffect } from 'react';
@@ -43,15 +42,16 @@ function App() {
 
         </div>
         {/* second container */}
-        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto shadow-sm shadow-gray-200 rounded-2xl secondBg secondText p-4 min-h-[600px] sm:min-h-[500px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%]'>
+        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto shadow-sm shadow-gray-200 rounded-2xl secondBg secondText p-4 min-h-[600px] sm:min-h-[500px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%] '>
           <div className='flex items-center justify-center '>
             <div className=''>
               <h1 className='border-b-2 font-semibold pb-2 secondText text-2xl sm:text-3xl'>What I can do</h1>
             </div>
           </div>
           <div className='flex flex-col gap-4 sm:flex-row sm:min-h-full'>
-            <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10'>
-              <p className='secondText sm:text-xl sm:mt-3'>As a Software Developer I am able to create a websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
+            <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10  '>
+              {/* Description */}
+              <p className='secondText sm:text-xl sm:mt-3 text-pretty text-center'>As a Software Developer I am able to create a websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
 
                 For Front end, I primarily use JavaScript, HTML and CSS, combined with React and TailwindCSS to create a dynamic website and shorten development time.
 
@@ -109,7 +109,7 @@ function App() {
         <div className='flex flex-col sm:flex-col lg:flex-row justify-center items-center lg:items-stretch gap-5 w-[95%] lg:w-[70%] mx-auto' id='Projects'>
           {/* Hyper Text Project */}
           <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black'>
-            <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
+            <div className='flex flex-col xl:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/hypertext.png' alt='HyperText Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
               </div>
@@ -123,7 +123,7 @@ function App() {
 
           {/* VLE Project */}
           <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black'>
-            <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
+            <div className='flex flex-col xl:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/vle.png' alt='Virtual Learning Environment Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
               </div>
