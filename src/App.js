@@ -15,7 +15,7 @@ function App() {
       {/* Particles Background */}
       <div className='fixed inset-0 -z-10'>
         <ParticlesBackground />
-      </div>  
+      </div>
       {/* Main wrapper */}
       <div className='relative flex flex-col gap-5 mb-10 items-center justify-center w-full'>
         {/* First container */}
