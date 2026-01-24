@@ -105,7 +105,7 @@ function App() {
         {/* Wrapping div */}
         <div className='flex flex-col sm:flex-col lg:flex-row justify-center items-center lg:items-stretch gap-5 w-[95%] lg:w-[70%] mx-auto' id='Projects'>
           {/* Hyper Text Project */}
-          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black transition delay-100 duration-300 ease-in-out hover:scale-104'>
+          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black transition delay-100 duration-300 ease-in-out hover:scale-102'>
             <div className='flex flex-col xl:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/hypertext.png' alt='HyperText Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
@@ -119,7 +119,7 @@ function App() {
           </div>
 
           {/* VLE Project */}
-          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black transition delay-100 duration-300 ease-in-out hover:scale-104'>
+          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black transition delay-100 duration-300 ease-in-out hover:scale-102'>
             <div className='flex flex-col xl:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/vle.png' alt='Virtual Learning Environment Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
