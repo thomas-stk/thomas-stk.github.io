@@ -48,7 +48,7 @@ function App() {
           <div className='flex flex-col gap-4 sm:flex-row sm:min-h-full'>
             <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10  '>
               {/* Description */}
-              <p className='secondText sm:text-xl sm:mt-3 text-pretty text-center'>As a Web Developer I am able to create a websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
+              <p className='secondText sm:text-xl sm:mt-3 text-pretty text-center'>As a Web Developer I am able to create websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
 
                 For Front end, I primarily use JavaScript, HTML and CSS, combined with React and TailwindCSS to create a dynamic website and shorten development time.
 
