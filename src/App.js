@@ -1,13 +1,10 @@
 import './App.css';
 import ParticlesBackground from './ParticlesBackground';
-import { useEffect } from 'react';
+
 
 
 function App() {
 
-  useEffect(() => {
-    document.title = "Thomas Stokes | Portfolio";
-  }, []);
 
   return (
     <div className='relative min-h-screen w-full'>
@@ -23,10 +20,10 @@ function App() {
             <div className='p-2 sm:p-5 text-2xl sm:text-3xl mb-2 font-semibold'>
               Portfolio
             </div>
-            <ul className='flex flex-row flex-wrap justify-center space-x-4 sm:space-x-8 sm:text-xl'>
-              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out'><a href='#Projects'>Projects</a></li>
-              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out'>About</li>
-              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out'>Contacts</li>
+            <ul className='flex flex-row flex-wrap justify-center space-x-4 sm:space-x-8 sm:text-xl sm:font-semibold'>
+              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out hover:text-teal-900'><a href='#Projects'>Projects</a></li>
+              
+              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out hover:text-teal-900'>About</li>
             </ul>
 
           </div>
@@ -37,7 +34,7 @@ function App() {
 
           </div>
           <div className='w-full flex justify-center'>
-            <p className='mt-5 sm:mx-20 mx-auto w-[90%] text-stone-800 '>Software Developer based in the UK, interested in web development, software development and Cybersecurity.</p>
+            <p className='mt-5 sm:mx-20 mx-auto w-[90%] text-stone-800 '>Developer based in the UK, interested in web development, software development and Cybersecurity.</p>
           </div>
 
         </div>
@@ -51,13 +48,13 @@ function App() {
           <div className='flex flex-col gap-4 sm:flex-row sm:min-h-full'>
             <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10  '>
               {/* Description */}
-              <p className='secondText sm:text-xl sm:mt-3 text-pretty text-center'>As a Software Developer I am able to create a websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
+              <p className='secondText sm:text-xl sm:mt-3 text-pretty text-center'>As a Web Developer I am able to create a websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
 
                 For Front end, I primarily use JavaScript, HTML and CSS, combined with React and TailwindCSS to create a dynamic website and shorten development time.
 
                 For the backend, I use Python, utilising the Flask framework and SQLite to create secure databases.
               </p>
-            </div>
+            </div> 
             <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10 '>
               <div className='appBg flex flex-wrap justify-center py-10 gap-5 sm:gap-10 sm:justify-center sm:py-10 shadow-md rounded-2xl'>
                 <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
@@ -108,7 +105,7 @@ function App() {
         {/* Wrapping div */}
         <div className='flex flex-col sm:flex-col lg:flex-row justify-center items-center lg:items-stretch gap-5 w-[95%] lg:w-[70%] mx-auto' id='Projects'>
           {/* Hyper Text Project */}
-          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black'>
+          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black transition delay-100 duration-300 ease-in-out hover:-rotate-2'>
             <div className='flex flex-col xl:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/hypertext.png' alt='HyperText Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
@@ -122,7 +119,7 @@ function App() {
           </div>
 
           {/* VLE Project */}
-          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black'>
+          <div className='flex flex-col mt-6 w-3/4 mx-auto md:w-full rounded-2xl projectBg text-white p-4 min-h-[400px] md:min-h-[300px] sm:p-4 md:p-4 lg:rounded-2xl flex-1 shadow-sm shadow-black transition delay-100 duration-300 ease-in-out hover:rotate-2'>
             <div className='flex flex-col xl:flex-row justify-center items-center md:items-start gap-5 w-full px-4 md:gap-10 md:w-full'>
               <div className='md:w-full md:mx-auto md:justify-center md:items-center md:mt-5'>
                 <img src='/Icons/vle.png' alt='Virtual Learning Environment Project' className='w-full lg:aspect-video object-contain bg-black/50 rounded-md outline outline-offset-1 outline-bg-white shadow-md'></img>
@@ -133,6 +130,11 @@ function App() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* About Section */}
+          <div className=''>
+            <h2 className='text-xl text-'>About</h2>
           </div>
 
         </div>
