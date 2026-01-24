@@ -133,9 +133,9 @@ function App() {
           </div>
 
           {/* About Section */}
-          <div className=''>
+          {/* <div className='hidden'>
             <h2 className='text-xl text-'>About</h2>
-          </div>
+          </div> */}
 
         </div>
       </div>
