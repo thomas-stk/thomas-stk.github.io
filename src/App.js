@@ -131,11 +131,47 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* About Section */}
+        {/* About Section for mobile*/}
+        <div className='flex sm:hidden flex-col mt-6 w-[95%] max-w-full mx-auto shadow-sm shadow-gray-200 rounded-2xl secondBg secondText p-4 min-h-[600px] sm:min-h-[500px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%]'>
+          <div className='flex flex-col items-center'>
+            <div className='flex flex-row '>
+              <h1 className='border-b-2 flex items-center gap-2 font-semibold pb-2 secondText text-2xl sm:text-3xl'>About</h1>
+            </div>
+
+            <p className='sm:text-xl text-lg font-normal mt-3 md:mt-5 '>I am a student currently studying T-Level Digital Production, Design and Development.<br /><br />
+              I'm enjoying my journey in web development, creating functional and responsive interfaces. I hope to continue my journey in web developement and integrate into software and app development, primarily in backend development.<br /><br />
+              Beyond web and software development, I'm also interested in cybersecurity. Specifically, malware analysis and reverse engineering.<br /><br />
+              Outside of coding, I enjoy going to the gym, tracking my food and progress along with it.</p>
+          </div>
+        </div>
+
+        {/* About Section for desktop*/}
+        <div className='hidden md:flex md:flex-row md:justify-evenly md:w-1/2 md:mx-auto md:gap-20'>
+
+          {/* Profile picture section */}
+          <div>
+            <img src='/favicon-96x96.png' alt='Profile picture' className='md:w-full'></img>
+          </div>
+
+
+          {/* Text section */}
+          <div className='flex flex-col items-center secondBg secondText md:mx-auto  md:p-4 md:min-h-1/2 md:rounded-2xl'>
+            <div className='flex flex-col items-center'>
+              <h1 className='border-b-2 flex items-center gap-2 font-semibold pb-2 secondText text-2xl md:text-3xl'>About</h1>
+              <p className='md:text-xl text-lg font-normal mt-3 md:mt-5 '>I am a student currently studying T-Level Digital Production, Design and Development.<br /><br />
+                I'm enjoying my journey in web development, creating functional and responsive interfaces. I hope to continue my journey in web developement and integrate into software and app development, primarily in backend development.<br /><br />
+                Beyond web and software development, I'm also interested in cybersecurity. Specifically, malware analysis and reverse engineering.<br /><br />
+                Outside of coding, I enjoy going to the gym, tracking my food and progress along with it.</p>
+            </div>
+
+          </div>
+
 
 
         </div>
+
       </div>
     </div>
   );
