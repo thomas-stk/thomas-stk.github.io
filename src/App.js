@@ -235,7 +235,7 @@ function App() {
               </svg></a>
 
               {/* LinkedIn link */}
-              <a href="https://www.linkedin.com/in/thomas-stokes-912b043a8/" rel='noopener noreferrer' target='_blank'><img src="/inBug-White.png" alt="LinkedIn" width="35" height="50"></img></a>
+              <a href="https://www.linkedin.com/in/thomas-stokes-912b043a8/" rel='noopener noreferrer' target='_blank'><img src="/InBug-White.png" alt="LinkedIn" width="35" height="50"></img></a>
 
             </div>
           </div>
