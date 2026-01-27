@@ -166,7 +166,7 @@ function App() {
         {/* About Section for mobile */}
 
         {/* Profile picture section for mobile */}
-        <div className='md:hidden flex flex-col w-full items-center'>
+        <div className='md:hidden flex flex-col w-full items-center' id='About'>
           <div className='mt-5'>
             <img src='/favicon-96x96.png' alt='Thomas Stokes Avatar' className='md:w-fit md:size-50 rounded-xl'></img>
           </div>
