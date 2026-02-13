@@ -1,0 +1,37 @@
+.simple-logo-scroll {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    gap: 30px;
+    animation: scroll 20s linear infinite;
+    will-change: auto;
+    /* Don't force GPU layer */
+}
+
+.logo-item {
+    height: 40px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause on hover */
+.logo-track:hover {
+    animation-play-state: paused;
+}

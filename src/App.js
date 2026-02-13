@@ -1,10 +1,39 @@
 import './App.css';
 import ParticlesBackground from './ParticlesBackground';
+import LogoLoop from './component/LogoLoop';
+import SimpleLogoScroll from './component/SimpleLogoScroll';
+import { useState, useEffect } from 'react';
+
 
 
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Responsive logo sizing
+  const [logoSize, setLogoSize] = useState({
+    height: 40,
+    gap: 30,
+    speed: 50,
+    fadeOut: false
+  });
+
+  useEffect(() => {
+    const updateLogoSize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      setLogoSize({
+        height: mobile ? 40 : 60,
+        gap: mobile ? 30 : 50,
+        speed: mobile ? 35 : 50,
+        fadeOut: !mobile
+      });
+    };
+
+    updateLogoSize();
+    window.addEventListener('resize', updateLogoSize);
+    return () => window.removeEventListener('resize', updateLogoSize);
+  }, []);
 
   return (
     <div className='relative min-h-screen w-full'>
@@ -21,9 +50,9 @@ function App() {
               Portfolio
             </div>
             <ul className='flex flex-row flex-wrap justify-center space-x-4 sm:space-x-8 sm:text-xl sm:font-semibold'>
-              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out hover:text-white'><a href='#Projects'>Projects</a></li>
+              <a href='#Projects'><li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out hover:text-white'>Projects</li></a>
 
-              <li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out hover:text-white'><a href='#About'>About</a></li>
+              <a href='#About'><li className='p-2 sm:p-5 transition-y-3 hover:-translate-y-2 delay-100 duration-300 ease-in-out hover:text-white'>About</li></a>
             </ul>
 
           </div>
@@ -39,63 +68,63 @@ function App() {
 
         </div>
         {/* second container */}
-        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto shadow-sm shadow-gray-200 rounded-2xl secondBg secondText p-4 min-h-[600px] sm:min-h-[500px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%] '>
+        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto text-white rounded-2xl p-4 sm:min-h-[500px] sm:p-4 md:p-4 lg:rounded-2xl lg:w-[70%] '>
           <div className='flex items-center justify-center '>
-            <div className=''>
-              <h1 className='border-b-2 font-semibold pb-2 secondText text-2xl sm:text-3xl'>What I can do</h1>
-            </div>
+            <h1 className='border-b-2 font-semibold pb-2 text-2xl sm:text-3xl'>What I can do</h1>
           </div>
-          <div className='flex flex-col gap-4 sm:flex-row sm:min-h-full'>
+          <div className='flex flex-col align-center justify-center items-center gap-4 sm:flex-col sm:min-h-full'>
             <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10  '>
               {/* Description */}
-              <p className='secondText sm:text-xl sm:mt-3 text-pretty text-center'>As a Web Developer I am able to create websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
+              <p className='text-white sm:text-xl sm:mt-3 text-pretty text-center'>As a Web Developer I am able to create websites that are responsive and efficient. I'd like to describe my design style as minimalistic.
 
                 For Front end, I primarily use JavaScript, HTML and CSS, combined with React and TailwindCSS to create a dynamic website and shorten development time.
 
                 For the backend, I use Python, utilising the Flask framework and SQLite to create secure databases.
               </p>
             </div>
-            <div className='sm:w-1/2 sm:h-full mt-5 sm:mt-10 '>
-              <div className='appBg flex flex-wrap justify-center py-10 gap-5 sm:gap-10 sm:justify-center sm:py-10 shadow-md rounded-2xl'>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img alt='CSS' src='/Icons/css.png'></img>
-                  <span className='tooltiptext'>CSS</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img alt='Flask' src='/Icons/flask1.png'></img>
-                  <span className='tooltiptext'>Flask</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img alt='HTML' src='/Icons/html.png'></img>
-                  <span className='tooltiptext'>HTML</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img alt='Jinja' src='/Icons/jinja1.png'></img>
-                  <span className='tooltiptext'>Jinja</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img alt='JavaScript' src='/Icons/js.png'></img>
-                  <span className='tooltiptext'>JavaScript</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img alt='Python' src='/Icons/python.png'></img>
-                  <span className='tooltiptext'>Python</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img src='/Icons/react.png' alt='React'></img>
-                  <span className='tooltiptext'>React</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img src='/Icons/sqlite.png' alt='SQLite'></img>
-                  <span className='tooltiptext'>SQLite</span>
-                </div>
-                <div className='w-[15%] tooltip transition delay-100 duration-300 ease-in-out hover:-translate-y-3'>
-                  <img src='/Icons/tailwind.png' alt='TailwindCSS'></img>
-                  <span className='tooltiptext'>TailwindCSS</span>
-                </div>
-
-              </div>
+            <div className="sm:w-full sm:h-full sm:mt-10">
+              {isMobile ? (
+                // Lightweight CSS-only animation for mobile
+                <SimpleLogoScroll
+                  logos={[
+                    { src: '/Icons/css.png', alt: 'CSS', title: 'CSS' },
+                    { src: '/Icons/flask1.png', alt: 'Flask', title: 'Flask' },
+                    { src: '/Icons/html.png', alt: 'HTML', title: 'HTML' },
+                    { src: '/Icons/jinja1.png', alt: 'Jinja', title: 'Jinja' },
+                    { src: '/Icons/js.png', alt: 'JavaScript', title: 'JavaScript' },
+                    { src: '/Icons/python.png', alt: 'Python', title: 'Python' },
+                    { src: '/Icons/react.png', alt: 'React', title: 'React' },
+                    { src: '/Icons/sqlite.png', alt: 'SQLite', title: 'SQLite' },
+                    { src: '/Icons/tailwind.png', alt: 'TailwindCSS', title: 'TailwindCSS' }
+                  ]}
+                />
+              ) : (
+                // Full-featured LogoLoop for desktop
+                <LogoLoop
+                  logos={[
+                    { src: '/Icons/css.png', alt: 'CSS', title: 'CSS' },
+                    { src: '/Icons/flask1.png', alt: 'Flask', title: 'Flask' },
+                    { src: '/Icons/html.png', alt: 'HTML', title: 'HTML' },
+                    { src: '/Icons/jinja1.png', alt: 'Jinja', title: 'Jinja' },
+                    { src: '/Icons/js.png', alt: 'JavaScript', title: 'JavaScript' },
+                    { src: '/Icons/python.png', alt: 'Python', title: 'Python' },
+                    { src: '/Icons/react.png', alt: 'React', title: 'React' },
+                    { src: '/Icons/sqlite.png', alt: 'SQLite', title: 'SQLite' },
+                    { src: '/Icons/tailwind.png', alt: 'TailwindCSS', title: 'TailwindCSS' }
+                  ]}
+                  speed={logoSize.speed}
+                  direction="left"
+                  logoHeight={logoSize.height}
+                  gap={logoSize.gap}
+                  pauseOnHover={true}
+                  scaleOnHover={false}
+                  fadeOut={logoSize.fadeOut}
+                  fadeOutColor="#141414ff"
+                  className="mx-auto"
+                />
+              )}
             </div>
+
 
           </div>
         </div>
