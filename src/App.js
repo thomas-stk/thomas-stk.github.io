@@ -111,7 +111,7 @@ function App() {
                 <div className='glass-card-light p-5 rounded-xl transition-smooth hover-lift'>
                   <h3 className='text-xl sm:text-2xl font-bold text-white mb-3 gradient-text-accent'>Frontend Development</h3>
                   <p className='text-gray-200 text-sm sm:text-base leading-relaxed'>
-                    I primarily use <span className='font-semibold'>JavaScript, HTML, and CSS</span>, combined with <span className='font-semibold'>React</span> and <span className='font-semibold'>TailwindCSS</span> to create dynamic websites and shorten development time.
+                    I primarily use <span className='font-semibold'>React, JavaScript, HTML, and CSS</span>, combined with <span className='font-semibold'>TailwindCSS</span> to create dynamic websites and shorten development time.
                   </p>
                 </div>
 
