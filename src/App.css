@@ -314,7 +314,7 @@
   transform: scale(1.05);
 }
 
-/* === Technology Badge === */
+/* Technology Badge */
 .tech-badge {
   display: inline-block;
   padding: 6px 14px;
@@ -333,7 +333,7 @@
   transform: translateY(-2px);
 }
 
-/* === Scroll Animations === */
+/* Scroll Animations */
 .fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
