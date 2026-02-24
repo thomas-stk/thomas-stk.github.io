@@ -357,11 +357,11 @@ function App() {
           <div className='flex flex-col glass-card p-8 rounded-2xl shadow-premium w-full md:w-3/5 fade-in-up-delay-1'>
             <h2 className='text-3xl font-bold gradient-text-accent mb-6'>About Me</h2>
             <p className='text-gray-200 text-lg leading-relaxed'>
-              I am a student currently studying <span className='font-semibold text-purple-300'>T-Level Digital Production, Design and Development</span>.
+              I am a student currently studying T-Level Digital Production, Design and Development.
               <br /><br />
               I'm enjoying my journey in web development, creating functional and responsive interfaces. I hope to continue my journey in web development and integrate into software and app development, primarily in backend development.
               <br /><br />
-              Beyond web and software development, I'm also interested in <span className='font-semibold text-purple-300'>cybersecurity</span>. Specifically, malware analysis and reverse engineering.
+              Beyond web and software development, I'm also interested in cybersecurity. Specifically, malware analysis and reverse engineering.
               <br /><br />
               Outside of coding, I enjoy going to the gym, tracking my food and progress along with it.
             </p>
