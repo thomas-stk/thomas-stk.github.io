@@ -104,7 +104,7 @@ function App() {
             {/* Description */}
             <div className='w-full max-w-3xl'>
               <p className='text-white text-base sm:text-lg md:text-xl leading-relaxed text-center'>
-                As a <span className='font-semibold text-purple-300'>Web Developer</span>, I create responsive and efficient websites with a minimalistic design philosophy.
+                As a Web Developer, I create responsive and efficient websites with a minimalistic design philosophy.
               </p>
 
               <div className='mt-8 space-y-6'>
@@ -309,11 +309,11 @@ function App() {
           <div className='flex flex-col'>
             <h2 className='text-2xl font-bold gradient-text-accent mb-4 text-center'>About Me</h2>
             <p className='text-gray-200 text-base leading-relaxed'>
-              I am a student currently studying <span className='font-semibold text-purple-300'>T-Level Digital Production, Design and Development</span>.
+              I am a student currently studying T-Level Digital Production, Design and Development.
               <br /><br />
               I'm enjoying my journey in web development, creating functional and responsive interfaces. I hope to continue my journey in web development and integrate into software and app development, primarily in backend development.
               <br /><br />
-              Beyond web and software development, I'm also interested in <span className='font-semibold text-purple-300'>cybersecurity</span>. Specifically, malware analysis and reverse engineering.
+              Beyond web and software development, I'm also interested in cybersecurity. Specifically, malware analysis and reverse engineering.
               <br /><br />
               Outside of coding, I enjoy going to the gym, tracking my food and progress along with it.
             </p>
