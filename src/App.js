@@ -75,10 +75,10 @@ function App() {
               Thomas Stokes
             </h1>
             <p className='text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4 sm:mb-6'>
-              Full-Stack Developer & Cybersecurity Enthusiast
+              Full-Stack Developer
             </p>
             <p className='text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4'>
-              Crafting responsive web experiences and secure applications. Based in the UK, specializing in modern web development and keen interest in cybersecurity.
+              Crafting responsive web experiences and secure applications. Based in the UK, passionate about software development and cybersecurity.
             </p>
 
             {/* CTA Buttons */}
@@ -104,21 +104,21 @@ function App() {
             {/* Description */}
             <div className='w-full max-w-3xl'>
               <p className='text-white text-base sm:text-lg md:text-xl leading-relaxed text-center'>
-                As a Web Developer, I create responsive and efficient websites with a minimalistic design philosophy.
+                As a Developer, I enjoy creating responsive and efficient applications.
               </p>
 
               <div className='mt-8 space-y-6'>
                 <div className='glass-card-light p-5 rounded-xl transition-smooth hover-lift'>
                   <h3 className='text-xl sm:text-2xl font-bold text-white mb-3 gradient-text-accent'>Frontend Development</h3>
                   <p className='text-gray-200 text-sm sm:text-base leading-relaxed'>
-                    I primarily use <span className='font-semibold'>React, JavaScript, HTML, and CSS</span>, combined with <span className='font-semibold'>TailwindCSS</span> to create dynamic websites and shorten development time.
+                    I primarily use React, JavaScript, HTML, and CSS, combined with TailwindCSS to create dynamic websites and shorten development time.
                   </p>
                 </div>
 
                 <div className='glass-card-light p-5 rounded-xl transition-smooth hover-lift'>
                   <h3 className='text-xl sm:text-2xl font-bold text-white mb-3 gradient-text-accent'>Backend Development</h3>
                   <p className='text-gray-200 text-sm sm:text-base leading-relaxed'>
-                    For the backend, I use <span className='font-semibold'>Python</span>, utilizing the <span className='font-semibold'>Flask framework</span> and <span className='font-semibold'>SQLite</span> to create secure databases.
+                    For the backend, I use Python, utilizing the Flask framework and SQLite to create secure databases.
                   </p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ function App() {
         <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto lg:w-[70%]' id='Projects'>
           <div className='flex items-center justify-center mb-8'>
             <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold gradient-text pb-3'>
-              Featured Projects
+              Projects
             </h2>
           </div>
 
