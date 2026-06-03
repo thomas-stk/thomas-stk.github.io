@@ -142,14 +142,14 @@ function App() {
               <div className='pb-6 reveal reveal-delay-1'>
                 <h3 className='font-display font-semibold text-[clamp(1.125rem,1.5vw+0.5rem,1.375rem)] leading-snug text-white/90 mb-3'>Frontend Development</h3>
                 <p className='text-gray-200 text-sm sm:text-base leading-relaxed'>
-                  I use React, TypeScript, and Next.js alongside HTML, CSS, and TailwindCSS to build dynamic websites and interfaces.
+                  I use React, TypeScript, and Next.js alongside HTML, CSS, and TailwindCSS to build dynamic websites and interfaces. I also use tools like Claude Code to help nail the interactive and visual side of things.
                 </p>
               </div>
 
               <div className='pt-6 border-t border-white/10 reveal reveal-delay-2'>
                 <h3 className='font-display font-semibold text-[clamp(1.125rem,1.5vw+0.5rem,1.375rem)] leading-snug text-white/90 mb-3'>Backend Development</h3>
                 <p className='text-gray-200 text-sm sm:text-base leading-relaxed'>
-                  I use Python with Flask and FastAPI, and SQLite for databases. FastAPI is what I'm currently learning.
+                  I use Python with Flask, and SQLite for databases. I'm currently learning FastAPI and Docker to enhance my backend development skills.
                 </p>
               </div>
             </div>
@@ -170,7 +170,9 @@ function App() {
                     { src: '/Icons/sqlite.png', alt: 'SQLite', title: 'SQLite' },
                     { src: '/Icons/tailwind.png', alt: 'TailwindCSS', title: 'TailwindCSS' },
                     { src: '/Icons/TS.png', alt: 'TypeScript', title: 'TypeScript' },
-                    { src: '/Icons/Claude.png', alt: 'Claude', title: 'Claude' }
+                    { src: '/Icons/Claude.png', alt: 'Claude', title: 'Claude' },
+                    { src: '/Icons/fastapi.png', alt: 'FastAPI', title: 'FastAPI' },
+                    { src: '/Icons/docker.png', alt: 'Docker', title: 'Docker' }
                   ]}
                 />
               ) : (
@@ -187,7 +189,9 @@ function App() {
                     { src: '/Icons/sqlite.png', alt: 'SQLite', title: 'SQLite' },
                     { src: '/Icons/tailwind.png', alt: 'TailwindCSS', title: 'TailwindCSS' },
                     { src: '/Icons/TS.png', alt: 'TypeScript', title: 'TypeScript' },
-                    { src: '/Icons/Claude.png', alt: 'Claude', title: 'Claude' }
+                    { src: '/Icons/Claude.png', alt: 'Claude', title: 'Claude' },
+                    { src: '/Icons/fastapi.png', alt: 'FastAPI', title: 'FastAPI' },
+                    { src: '/Icons/docker.png', alt: 'Docker', title: 'Docker' }
                   ]}
                   speed={logoSize.speed}
                   direction="left"
@@ -336,7 +340,7 @@ function App() {
           <div className='flex flex-col glass-card p-6 md:p-8 rounded-2xl shadow-premium w-full md:w-3/5 reveal reveal-delay-1'>
             <h2 className='font-display font-bold text-[clamp(1.5rem,2.5vw+0.75rem,2.25rem)] leading-[1.1] tracking-[-0.015em] text-white text-balance mb-4 md:mb-6'>About Me</h2>
             <p className='text-gray-200 text-base md:text-lg leading-relaxed max-w-prose'>
-              I am a student studying T-Level Digital Production, Design and Development, and currently on a work placement at Surplush.co.uk where I work with TypeScript and Next.js.
+              I am a student studying T-Level Digital Production, Design and Development, and currently on a work placement at Surplush where I work with TypeScript and Next.js.
               <br /><br />
               I enjoy building functional and responsive interfaces. Alongside my placement work, I'm learning FastAPI to expand my backend skills beyond Flask.
               <br /><br />
