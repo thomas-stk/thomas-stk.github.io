@@ -209,7 +209,7 @@ function App() {
         </div>
 
         {/* Projects Section */}
-        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto lg:w-[70%]' id='Projects'>
+        <div className='flex flex-col mt-6 w-[95%] max-w-full mx-auto lg:w-[85%]' id='Projects'>
           <div className='flex items-center justify-center mb-8 reveal'>
             <h2 className='font-display font-bold text-[clamp(1.5rem,2.5vw+0.75rem,2.25rem)] leading-[1.1] tracking-[-0.015em] text-white text-balance pb-3'>
               Projects
@@ -217,9 +217,9 @@ function App() {
           </div>
 
           {/* Projects Grid */}
-          <div className='flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-6'>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6'>
             {/* HyperText Project */}
-            <div className='flex flex-col w-full md:w-3/4 lg:w-1/3 rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal'>
+            <div className='flex flex-col w-full rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal'>
               <div className='flex flex-col gap-6'>
                 {/* Project Image */}
                 <div className='image-overlay rounded-xl overflow-hidden'>
@@ -267,7 +267,7 @@ function App() {
             </div>
 
             {/* VLE Project */}
-            <div className='flex flex-col w-full md:w-3/4 lg:w-1/3 rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal reveal-delay-1'>
+            <div className='flex flex-col w-full rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal reveal-delay-1'>
               <div className='flex flex-col gap-6'>
                 {/* Project Image */}
                 <div className='image-overlay rounded-xl overflow-hidden'>
@@ -315,7 +315,7 @@ function App() {
             </div>
 
             {/* Threat-intel Project */}
-            <div className='flex flex-col w-full md:w-3/4 lg:w-1/3 rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal reveal-delay-2'>
+            <div className='flex flex-col w-full rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal reveal-delay-2'>
               <div className='flex flex-col gap-6'>
                 {/* Project Image */}
                 <div className='image-overlay rounded-xl overflow-hidden'>
@@ -336,8 +336,8 @@ function App() {
                       <span className='text-xs text-gray-400 mt-0.5'>2026</span>
                     </div>
                     <a
-                      href='https://github.com/thomas-stk/Threat-intel'
-                      aria-label="View Threat-intel Project source code on GitHub"
+                      href='https://github.com/thomas-stk/threat-intel'
+                      aria-label='View Threat-intel source code on GitHub'
                       rel='noopener noreferrer'
                       target='_blank'
                       className='social-link w-10 h-10'
@@ -360,6 +360,56 @@ function App() {
                     <span className='tech-badge'>Docker</span>
                     <span className='tech-badge'>Nginx</span>
                     <span className='tech-badge'>Tailwind CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* UpCheck Project */}
+            <div className='flex flex-col w-full rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal reveal-delay-3'>
+              <div className='flex flex-col gap-6'>
+                {/* Project Image */}
+                <div className='image-overlay rounded-xl overflow-hidden'>
+                  <img
+                    src='/Icons/upcheck.png'
+                    alt='Screenshot of UpCheck desktop app'
+                    className='w-full aspect-video object-cover bg-black/50 rounded-xl'
+                    loading='lazy'
+                  />
+                </div>
+
+                {/* Project Info */}
+                <div className='flex flex-col gap-4'>
+                  {/* Title and GitHub */}
+                  <div className='flex flex-row items-center justify-between border-b border-white/20 pb-3'>
+                    <div className='flex flex-col'>
+                      <h3 className='font-display font-bold text-[clamp(1.25rem,2vw+0.5rem,1.625rem)] leading-snug tracking-[-0.01em] text-white'>UpCheck</h3>
+                      <span className='text-xs text-gray-400 mt-0.5'>2026</span>
+                    </div>
+                    <a
+                      href='https://github.com/thomas-stk/upcheck'
+                      aria-label='View UpCheck source code on GitHub'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                      className='social-link w-10 h-10'
+                    >
+                      <GitHubIcon />
+                    </a>
+                  </div>
+
+                  {/* Description */}
+                  <p className='text-gray-200 text-base sm:text-lg leading-relaxed'>
+                    A cross-platform desktop app that monitors the real-time status of your services from the system tray. Comes with popular services built in, and lets you add your own custom URLs too.
+                  </p>
+
+                  {/* Technology Badges */}
+                  <div className='flex flex-wrap gap-2 mt-2'>
+                    <span className='tech-badge'>Electron</span>
+                    <span className='tech-badge'>React</span>
+                    <span className='tech-badge'>TypeScript</span>
+                    <span className='tech-badge'>Vite</span>
+                    <span className='tech-badge'>Tailwind CSS</span>
+                    <span className='tech-badge'>Vitest</span>
                   </div>
                 </div>
               </div>
