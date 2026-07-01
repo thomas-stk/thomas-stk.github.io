@@ -314,14 +314,14 @@ function App() {
               </div>
             </div>
 
-            {/* Threat-intel Project */}
+            {/* Url-threat-intel Project */}
             <div className='flex flex-col w-full rounded-2xl projectBg p-6 shadow-premium-hover hover-lift transition-smooth-slow reveal reveal-delay-2'>
               <div className='flex flex-col gap-6'>
                 {/* Project Image */}
                 <div className='image-overlay rounded-xl overflow-hidden'>
                   <img
-                    src='/Icons/threat-intel.png'
-                    alt='Screenshot of Threat-intel Project'
+                    src='/Icons/url-threat-intel.png'
+                    alt='Screenshot of Url-threat-intel Project'
                     className='w-full aspect-video object-cover bg-black/50 rounded-xl'
                     loading='lazy'
                   />
@@ -332,12 +332,12 @@ function App() {
                   {/* Title and GitHub */}
                   <div className='flex flex-row items-center justify-between border-b border-white/20 pb-3'>
                     <div className='flex flex-col'>
-                      <h3 className='font-display font-bold text-[clamp(1.25rem,2vw+0.5rem,1.625rem)] leading-snug tracking-[-0.01em] text-white'>Threat-intel</h3>
+                      <h3 className='font-display font-bold text-[clamp(1.25rem,2vw+0.5rem,1.625rem)] leading-snug tracking-[-0.01em] text-white'>Url-threat-intel</h3>
                       <span className='text-xs text-gray-400 mt-0.5'>2026</span>
                     </div>
                     <a
-                      href='https://github.com/thomas-stk/threat-intel'
-                      aria-label='View Threat-intel source code on GitHub'
+                      href='https://github.com/thomas-stk/url-threat-intel'
+                      aria-label='View Url-threat-intel source code on GitHub'
                       rel='noopener noreferrer'
                       target='_blank'
                       className='social-link w-10 h-10'
